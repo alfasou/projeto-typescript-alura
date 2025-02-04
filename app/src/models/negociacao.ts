@@ -1,4 +1,6 @@
-export class Negociacao {
+import { Comparavel } from "../interfaces/comparavel.js";
+
+export class Negociacao implements Comparavel<Negociacao> {
 	constructor(
 		private _data: Date,
 		public readonly quantidade: number,
